@@ -14,10 +14,10 @@ const ContactForm = () => {
     <div className="App">
       <form onSubmit={handleSubmit(onSubmit)}>
         <div>
-          <label htmlFor="firstName">First Name*</label>
+          <label htmlFor = "first name" >first name</label>
           <input
             name="firstName"
-            placeholder="bill"
+            placeholder="Mike"
             ref={register({ required: true, maxLength: 3 })}
           />
           {errors.firstName && (
@@ -29,7 +29,7 @@ const ContactForm = () => {
           <label htmlFor="lastName">Last Name*</label>
           <input
             name="lastName"
-            placeholder="luo"
+            placeholder="luck"
             ref={register({ required: true })}
           />
           {errors.lastName && (
